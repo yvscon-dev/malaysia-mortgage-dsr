@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.shell-bg {
+  background:
+    radial-gradient(circle at top right, rgba(20, 184, 166, 0.09), transparent 28rem),
+    #f4f7fb;
+}
+
+.card {
+  border: 1px solid #e5eaf1;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(15, 39, 66, 0.055);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid #dfe5ed;
+  border-radius: 0.7rem;
+  background: #fff;
+  padding: 0.7rem 0.85rem;
+  color: #172033;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.field:focus {
+  border-color: #14a89a;
+  box-shadow: 0 0 0 3px rgba(20, 168, 154, 0.11);
+}
+
+.currency-field {
+  padding-left: 2.6rem;
+}
+
+.number-field::-webkit-inner-spin-button,
+.number-field::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .report-wrap {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
