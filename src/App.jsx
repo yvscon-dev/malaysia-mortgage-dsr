@@ -231,7 +231,7 @@ function Sidebar({ page, setPage, mobileOpen, setMobileOpen }) {
           <div className="mb-3 grid h-9 w-9 place-items-center rounded-lg bg-teal-400/15 text-teal-300">
             <ShieldCheck size={19} />
           </div>
-          <p className="text-sm font-semibold">Private by design</p>
+          <p className="text-sm font-semibold">Created by Yves Chan</p>
           <p className="mt-1 text-xs leading-5 text-slate-400">Customer records stay on this device and are not sent to a server.</p>
         </div>
       </aside>
